@@ -15,3 +15,19 @@ Sistema de cardápio digital e gestão de pedidos via WhatsApp, desenvolvido par
 
 ---
 *Projeto desenvolvido por Marcos Silva durante a jornada DevClub.*
+
+<p align="center">
+  <img src="./assets/Banner-projeto-pele.png.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/Banner-projeto.png.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/Resultado-Ipad-pele.png.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/Resultado-iPhone-14-Plus.png.png" width="100%">
+</p>
