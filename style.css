@@ -231,3 +231,142 @@ main {
     padding: 10px 0;
     border-bottom: 1px solid #333;
 }
+
+.logo-container {
+    width: 180px;          /* Tamanho da logo no site */
+    height: 180px;
+    margin: 20px auto;     /* Centraliza e dá espaço no topo */
+    border-radius: 50%;    /* Faz o container ficar redondo */
+    overflow: hidden;      /* Esconde o fundo branco que sobrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ff9100; /* Borda laranja para dar destaque */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra leve para ficar profissional */
+}
+
+.logo-container img {
+    width: 110%;           /* Aumentamos um pouco para "dar zoom" e sumir com as bordas brancas */
+    height: 110%;
+    object-fit: cover;     /* Garante que a imagem preencha o círculo sem amassar */
+}
+
+
+
+.topo-escuro {
+background-color: #000000 !important;
+background: #000000 !important;
+padding: 40px 20px !important;
+text-align: center;
+border-bottom: 4px solid #ff9100;
+}
+
+.topo-escuro img {
+width: 200px !important;
+height: auto;
+}
+
+.topo-escuro h1 {
+color: #ffffff !important;
+margin-top: 15px;
+}
+
+.topo-escuro p {
+color: #ff9100 !important;
+font-weight: bold;
+}
+
+#cart-status {
+color: #ffffff;
+margin-top: 10px;
+}
+
+#cart-status {
+background-color: #ff9100 !important;
+color: #000000 !important;
+padding: 10px 20px !important;
+border-radius: 30px !important;
+font-weight: bold !important;
+display: inline-block !important;
+margin-top: 15px !important;
+cursor: pointer;
+box-shadow: 0 4px 15px rgba(255, 145, 0, 0.3);
+}
+
+#cart-status:hover {
+background-color: #ffffff !important;
+color: #ff9100 !important;
+transform: scale(1.05);
+}
+
+.video-container {
+position: relative;
+width: 100%;
+max-height: 400px;
+overflow: hidden;
+border-bottom: 5px solid #ff9100; /* Linha laranja para combinar com o topo */
+}
+
+.video-destaque {
+width: 100%;
+height: auto;
+filter: brightness(0.6); /* Deixa o vídeo um pouco mais escuro para o texto brilhar */
+}
+
+/* --- VÍDEO COM TAMANHO EQUILIBRADO --- */
+
+.video-container {
+position: relative;
+width: 100%;
+height: 350px !important; /* Aqui a gente define uma altura fixa e elegante /
+overflow: hidden;
+background-color: #000; / Fundo preto caso o vídeo demore a carregar */
+}
+
+.video-destaque {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Isso faz o vídeo preencher o espaço sem achatar o burguer /
+filter: brightness(0.8); / Só um tiquinho de sombra pra dar estilo */
+}
+
+.video-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+text-align: center;
+}
+
+.video-container {
+position: relative;
+width: 100%;
+height: 300px !important; /* Aqui a gente trava a altura para não ficar gigante */
+overflow: hidden;
+background-color: #000;
+border-bottom: 4px solid #ff9100;
+}
+
+.video-destaque {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Esse é o segredo! Ele corta as bordas mas mantém o centro do vídeo bonito */
+filter: brightness(0.8);
+}
+
+.video-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+width: 100%;
+}
+
+.video-overlay h2 {
+color: #ff9100 !important;
+font-size: 2.5rem !important;
+text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+margin: 0;
+}
