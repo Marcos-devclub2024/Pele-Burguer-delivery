@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pelé Burguer | O Rei do Sabor</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pelé Burguer | O Rei do Sabor</h1>
+      <p>A experiência nota 10 em cada mordida.</p>
+      <div id="cart-status">
+        🛒 Itens: <span id="cart-count">0</span> | Total: R$
+        <span id="cart-total-header">0.00</span>
+      </div>
+    </header>
+
+    <div class="video-container">
+      <video autoplay muted loop playsinline class="video-destaque">
+        <source src="./hamburguerocapitao.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeos.
+      </video>
+      <div class="video-overlay">
+        <h2>O Rei do Sabor!</h2>
+      </div>
+    </div>
+
+    <main>
+      <h2 class="section-title">🏆 Hambúrgueres Seleção</h2>
+      <section id="burgers" class="grid-container">
+        <div class="item">
+          <img
+            src="./img/hamburguer pele.jpg"
+            alt="Pelé Classico"
+            class="lanche-img"
+          />
+          <h3>Pelé Clássico</h3>
+          <p>Pão, blend de 150g, alface, tomate, queijo prato e maionese.</p>
+          <span>R$ 28,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Pelé Clássico"
+            data-price="28.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/Reipele.jpeg"
+            alt="Hambúrguer Rei Pelé"
+            class="lanche-img"
+          />
+          <h3>Rei Pelé</h3>
+          <p>
+            O favorito! Pão brioche, blend 180g, cheddar duplo e bacon
+            artesanal.
+          </p>
+          <span>R$ 38,00</span>
+          <button class="add-to-cart" data-name="Rei Pelé" data-price="38.00">
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/Peleduplohamburguer.jpg"
+            alt="Pelé Duplo"
+            class="lanche-img"
+          />
+          <h3>Pelé Duplo</h3>
+          <p>
+            Para quem tem fome de gol: 2 blends de 180g e queijo cheddar em
+            dobro.
+          </p>
+          <span>R$ 45,00</span>
+          <button class="add-to-cart" data-name="Pelé Duplo" data-price="45.00">
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <video
+            src="./hamburguerocapitao.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="lanche-video"
+          ></video>
+          <h3>O Capitão (Picanha)</h3>
+          <p>
+            Blend de picanha 180g, queijo coalho grelhado, melado de cana e
+            rúcula.
+          </p>
+          <span>R$ 44,00</span>
+          <button class="add-to-cart" data-name="O Capitão" data-price="44.00">
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/FrangoOuro.jpg"
+            alt="Frango de Ouro"
+            class="lanche-img"
+          />
+          <h3>Frango de Ouro</h3>
+          <p>
+            Sobrecoxa de frango empanada crocante, alface americana e maionese
+            de limão.
+          </p>
+          <span>R$ 30,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Frango de Ouro"
+            data-price="30.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/otricampeao.jpg"
+            alt="O Tricampeão"
+            class="lanche-img"
+          />
+          <h3>O Tricampeão</h3>
+          <p>
+            3 blends de 120g, 3 camadas de queijo, cebola roxa e picles de
+            pepino.
+          </p>
+          <span>R$ 52,00</span>
+          <button
+            class="add-to-cart"
+            data-name="O Tricampeão"
+            data-price="52.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img src="./img/kids.jpg" alt="Pele kids" class="lanche-img" />
+          <h3>Pelézinho (Kids)</h3>
+          <p>
+            Hambúrguer de 100g, queijo mussarela e pão brioche macio (sem
+            salada).
+          </p>
+          <span>R$ 22,00</span>
+          <button class="add-to-cart" data-name="Pelézinho" data-price="22.00">
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/goldeplaca.jpg"
+            alt="Gol de Placa"
+            class="lanche-img"
+          />
+          <h3>Gol de Placa (Hot)</h3>
+          <p>
+            Blend 180g, queijo pepper jack, geleia de pimenta e nachos
+            crocantes.
+          </p>
+          <span>R$ 39,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Gol de Placa"
+            data-price="39.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/camisa-10.jpg"
+            alt="Hambúrguer Camisa 10"
+            class="lanche-img"
+          />
+          <h3>Camisa 10</h3>
+          <p>
+            O clássico do estádio: Blend 150g, muito queijo prato, ovo frito e
+            bacon premium.
+          </p>
+          <span>R$ 35,00</span>
+          <button class="add-to-cart" data-name="Camisa 10" data-price="35.00">
+            Adicionar
+          </button>
+        </div>
+      </section>
+
+      <h2 class="section-title">🍟 Acompanhamentos</h2>
+      <section id="sides" class="grid-container">
+        <div class="item">
+          <img
+            src="./img/batatafritatradicional.webp"
+            alt="Batata Frita"
+            class="lanche-img"
+          />
+          <h3>Batata Frita Tradicional</h3>
+          <p>Porção individual de batatas crocantes e sequinhas.</p>
+          <span>R$ 15,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Batata Tradicional"
+            data-price="15.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/batatacomcheddar.jpg"
+            alt="Batata com Cheddar"
+            class="lanche-img"
+          />
+          <h3>Batata Cheddar e Bacon</h3>
+          <p>Nossa batata especial coberta com muito cheddar e bacon picado.</p>
+          <span>R$ 22,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Batata Cheddar/Bacon"
+            data-price="22.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/onionrings.jpg"
+            alt="Onion Rings"
+            class="lanche-img"
+          />
+          <h3>Onion Rings</h3>
+          <p>Anéis de cebola empanados e super crocantes.</p>
+          <span>R$ 18,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Onion Rings"
+            data-price="18.00"
+          >
+            Adicionar
+          </button>
+        </div>
+      </section>
+
+      <h2 class="section-title">🥤 Bebidas</h2>
+      <section id="drinks" class="grid-container">
+        <div class="item">
+          <img
+            src="./img/milkshakes.jpg"
+            alt="Milk Shakes"
+            class="lanche-img"
+          />
+          <h3>Milk Shake</h3>
+          <p>500ml de pura cremosidade (Chocolate ou Morango).</p>
+          <span>R$ 20,00</span>
+          <button class="add-to-cart" data-name="Milk Shake" data-price="20.00">
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/sucosnaturais.jpg"
+            alt="Sucos Naturais"
+            class="lanche-img"
+          />
+          <h3>Sucos Naturais</h3>
+          <p>Laranja, Limão ou Abacaxi com Hortelã.</p>
+          <span>R$ 10,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Suco Natural"
+            data-price="10.00"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div class="item">
+          <img
+            src="./img/refrigerante.jpg"
+            alt="Refrigerantes"
+            class="lanche-img"
+          />
+          <h3>Refrigerantes</h3>
+          <p>Lata 350ml (Coca-Cola, Guaraná, Fanta).</p>
+          <span>R$ 7,00</span>
+          <button
+            class="add-to-cart"
+            data-name="Refrigerante"
+            data-price="7.00"
+          >
+            Adicionar
+          </button>
+        </div>
+      </section>
+
+ <section id="cart">
+    <h2>🛒 Seu Pedido</h2>
+    <ul id="cart-items-list"></ul>
+    <p><strong>Total Geral: R$ <span id="cart-total-footer">0.00</span></strong></p>
+
+  <div id="checkout-form">
+    <input type="text" id="client-name" placeholder="Seu Nome Completo" required>
+    
+    <select id="client-neighborhood" required>
+        <option value="" disabled selected>Selecione seu Bairro (Taxa)</option>
+        <option value="Centro" data-fee="5.00">Centro - R$ 5,00</option>
+        <option value="Jardim América" data-fee="7.00">Jardim América - R$ 7,00</option>
+        <option value="Vila Real" data-fee="10.00">Vila Real - R$ 10,00</option>
+        <option value="Retirada" data-fee="0.00">Retirar no Balcão - Grátis</option>
+    </select>
+
+    <input type="text" id="client-street" placeholder="Rua e Número da Casa" required>
+    
+    <select id="payment-method">
+        <option value="" disabled selected>Forma de Pagamento</option>
+        <option value="Pix">Pix</option>
+        <option value="Cartão">Cartão (Maquininha)</option>
+        <option value="Dinheiro">Dinheiro</option>
+    </select>
+</div>
+
+
+    <button id="checkout-btn">🚀 Finalizar Pedido para WhatsApp</button>
+</section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Pelé Burguer - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
