@@ -12,63 +12,98 @@ body {
     line-height: 1.6;
 }
 
-/* 2. CABEÇALHO */
-header {
-    background: linear-gradient(135deg, #ff8c00 0%, #ff4500 100%);
-    color: white;
-    padding: 40px 20px;
+/* 2. CABEÇALHO (TOPO ESCURO) */
+.topo-escuro {
+    background-color: #000000 !important;
+    padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid #ff9100;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.logo-container {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ff9100;
+    box-shadow: 0 4px 15px rgba(255, 145, 0, 0.3);
+}
+
+.logo-container img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.topo-escuro h1 {
+    color: #ffffff;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#cart-status {
-    background: rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 50px;
-    margin-top: 15px;
+.topo-escuro p {
+    color: #ff9100;
     font-weight: bold;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 10px;
 }
 
-/* 3. VÍDEO DESTAQUE */
+/* BOTÃO DE STATUS DO CARRINHO */
+#cart-status {
+    background-color: #ff9100 !important;
+    color: #000000 !important;
+    padding: 10px 25px !important;
+    border-radius: 30px !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    margin-top: 10px !important;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 145, 0, 0.3);
+}
+
+#cart-status:hover {
+    background-color: #ffffff !important;
+    transform: scale(1.05);
+}
+
+/* 3. VÍDEO BANNER (EQUILIBRADO) */
 .video-container {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 300px !important; /* Altura ideal de banner */
     overflow: hidden;
+    background-color: #000;
+    border-bottom: 4px solid #ff9100;
 }
 
 .video-destaque {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.7);
 }
 
 .video-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    pointer-events: none; /* Não atrapalha cliques */
 }
 
 .video-overlay h2 {
-    color: #ffd700;
-    font-size: 3rem;
+    color: #ff9100 !important;
+    font-size: 2.8rem !important;
     text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
 }
 
 /* 4. GRID DE PRODUTOS */
@@ -90,11 +125,11 @@ main {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 25px;
     margin-bottom: 60px;
 }
 
-/* 5. CARTÃO DO ITEM */
+/* 5. CARTÃO DO ITEM (HAMBÚRGUERES) */
 .item {
     background: #1e1e1e;
     border-radius: 20px;
@@ -108,35 +143,36 @@ main {
 }
 
 .item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     border-color: #ff8c00;
-    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(255, 140, 0, 0.15);
 }
 
-.lanche-img, .lanche-video {
+/* Padronização das Imagens dos Lanches */
+.lanche-img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 200px; /* Altura fixa para todos */
+    object-fit: cover; /* Não estica a imagem */
     border-radius: 15px;
     margin-bottom: 15px;
 }
 
 .item h3 {
     color: #ffd700;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
 }
 
 .item p {
     font-size: 0.9rem;
     color: #bbb;
     margin-bottom: 15px;
-    height: 45px; /* Mantém o alinhamento dos textos */
+    min-height: 50px; /* Alinha os botões mesmo com textos diferentes */
 }
 
 .item span {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 15px;
@@ -159,7 +195,7 @@ main {
     background: #218838;
 }
 
-/* 7. CARRINHO FINAL */
+/* 7. FORMULÁRIO E CARRINHO */
 #cart {
     background: #1e1e1e;
     padding: 30px;
@@ -168,30 +204,11 @@ main {
     margin-top: 40px;
 }
 
-#checkout-btn {
-    width: 100%;
-    background: #ff8c00;
-    color: white;
-    border: none;
-    padding: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-/* 8. RESPONSIVIDADE CELULAR */
-@media (max-width: 768px) {
-    .video-overlay h2 { font-size: 1.8rem; }
-    header h1 { font-size: 1.8rem; }
-}
-
 #checkout-form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 #checkout-form input, #checkout-form select {
@@ -208,165 +225,34 @@ main {
     outline: none;
 }
 
-.qty-btn {
+#checkout-btn {
+    width: 100%;
     background: #ff8c00;
-    color: black;
+    color: white;
     border: none;
-    border-radius: 4px;
-    width: 25px;
-    height: 25px;
+    padding: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.2s;
+    margin-top: 20px;
+    transition: filter 0.2s;
 }
 
-.qty-btn:hover {
-    background: #ffd700;
+#checkout-btn:hover {
+    filter: brightness(1.2);
 }
 
-.cart-item-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #333;
+/* 8. RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .video-overlay h2 { font-size: 1.8rem !important; }
+    .topo-escuro h1 { font-size: 1.6rem; }
+    .video-container { height: 250px !important; }
 }
 
-.logo-container {
-    width: 180px;          /* Tamanho da logo no site */
-    height: 180px;
-    margin: 20px auto;     /* Centraliza e dá espaço no topo */
-    border-radius: 50%;    /* Faz o container ficar redondo */
-    overflow: hidden;      /* Esconde o fundo branco que sobrar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid #ff9100; /* Borda laranja para dar destaque */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra leve para ficar profissional */
-}
-
-.logo-container img {
-    width: 110%;           /* Aumentamos um pouco para "dar zoom" e sumir com as bordas brancas */
-    height: 110%;
-    object-fit: cover;     /* Garante que a imagem preencha o círculo sem amassar */
-}
-
-
-
-.topo-escuro {
-background-color: #000000 !important;
-background: #000000 !important;
-padding: 40px 20px !important;
-text-align: center;
-border-bottom: 4px solid #ff9100;
-}
-
-.topo-escuro img {
-width: 200px !important;
-height: auto;
-}
-
-.topo-escuro h1 {
-color: #ffffff !important;
-margin-top: 15px;
-}
-
-.topo-escuro p {
-color: #ff9100 !important;
-font-weight: bold;
-}
-
-#cart-status {
-color: #ffffff;
-margin-top: 10px;
-}
-
-#cart-status {
-background-color: #ff9100 !important;
-color: #000000 !important;
-padding: 10px 20px !important;
-border-radius: 30px !important;
-font-weight: bold !important;
-display: inline-block !important;
-margin-top: 15px !important;
-cursor: pointer;
-box-shadow: 0 4px 15px rgba(255, 145, 0, 0.3);
-}
-
-#cart-status:hover {
-background-color: #ffffff !important;
-color: #ff9100 !important;
-transform: scale(1.05);
-}
-
-.video-container {
-position: relative;
-width: 100%;
-max-height: 400px;
-overflow: hidden;
-border-bottom: 5px solid #ff9100; /* Linha laranja para combinar com o topo */
-}
-
-.video-destaque {
-width: 100%;
-height: auto;
-filter: brightness(0.6); /* Deixa o vídeo um pouco mais escuro para o texto brilhar */
-}
-
-/* --- VÍDEO COM TAMANHO EQUILIBRADO --- */
-
-.video-container {
-position: relative;
-width: 100%;
-height: 350px !important; /* Aqui a gente define uma altura fixa e elegante /
-overflow: hidden;
-background-color: #000; / Fundo preto caso o vídeo demore a carregar */
-}
-
-.video-destaque {
-width: 100%;
-height: 100%;
-object-fit: cover; /* Isso faz o vídeo preencher o espaço sem achatar o burguer /
-filter: brightness(0.8); / Só um tiquinho de sombra pra dar estilo */
-}
-
-.video-overlay {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 100%;
-text-align: center;
-}
-
-.video-container {
-position: relative;
-width: 100%;
-height: 300px !important; /* Aqui a gente trava a altura para não ficar gigante */
-overflow: hidden;
-background-color: #000;
-border-bottom: 4px solid #ff9100;
-}
-
-.video-destaque {
-width: 100%;
-height: 100%;
-object-fit: cover; /* Esse é o segredo! Ele corta as bordas mas mantém o centro do vídeo bonito */
-filter: brightness(0.8);
-}
-
-.video-overlay {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-width: 100%;
-}
-
-.video-overlay h2 {
-color: #ff9100 !important;
-font-size: 2.5rem !important;
-text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
-margin: 0;
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 0.8rem;
 }
