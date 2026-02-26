@@ -27,14 +27,42 @@ Para o desenvolvimento deste projeto, foram utilizadas as seguintes tecnologias:
 *Desenvolvido por **Marcos Vitalicia** durante a jornada no **DevClub**.*
 
 ---
+## 🛠️ Tecnologias
 
-## 📱 Interface Responsiva
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-Abaixo, você pode conferir como o **Pelé Burguer** se adapta perfeitamente em diferentes dispositivos, garantindo a melhor experiência para o cliente:
+---
 
-<div align="center">
-  <img src="./assets/site-pele-Macbook-Air.png" width="600px" alt="Versão Desktop">
-  <br><br>
-  <img src="./assets/site-pele-iPad-PRO.png" width="350px" alt="Versão Tablet">
-  <img src="./assets/site-pele-iphone14.png" width="180px" alt="Versão Mobile">
-</div>
+## 👨‍💻 Sobre o Projeto
+
+*Desenvolvido por **Marcos Vitalicia** durante a jornada no **DevClub**.*
+
+---
+
+## 🛠️ Tecnologias
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+---
+
+## 👨‍💻 Sobre o Projeto
+
+*Desenvolvido por **Marcos Vitalicia** durante a jornada no **DevClub**.*
+
+---
+
+## 📱 Interface Responsiva (com Fundo)
+
+Abaixo, você pode conferir como o **Pelé Burguer** se adapta perfeitamente em diferentes dispositivos. As imagens foram colocadas em uma moldura para garantir melhor visualização:
+
+| Versão Desktop (MacBook) | Versão Tablet & Mobile (iPad + iPhone) |
+| :---: | :---: |
+ <img src="./assets/site-pele-Macbook-Air.png" width="450px" alt="Versão Desktop"> | <img src="./assets/site-pele-iPad-PRO.png" width="220px" alt="Versão Tablet"> <br><br> <img src="./assets/site-pele-iphone14.png" width="120px" alt="Versão Mobile"> |
