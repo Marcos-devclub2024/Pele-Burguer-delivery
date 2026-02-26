@@ -65,4 +65,4 @@ Abaixo, você pode conferir como o **Pelé Burguer** se adapta perfeitamente em 
 
 | Versão Desktop (MacBook) | Versão Tablet & Mobile (iPad + iPhone) |
 | :---: | :---: |
- <img src="./assets/site-pele-Macbook-Air.png" width="450px" alt="Versão Desktop"> | <img src="./assets/site-pele-iPad-PRO.png" width="220px" alt="Versão Tablet"> <br><br> <img src="./assets/site-pele-iphone14.png" width="120px" alt="Versão Mobile"> |
+ <img src="./assets/site-pele-Macbook-Air.png" width="450px" alt="Versão Desktop"> | <img src="./assets/site-pele-iPad-PRO.png" width="220px" alt="Versão Tablet"> <br><br> <img src="./assets/site-pele-iphone14.png" width="120px" alt="Versão Mobile"> |git add README.md
