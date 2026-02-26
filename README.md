@@ -16,18 +16,13 @@ Sistema de cardápio digital e gestão de pedidos via WhatsApp, desenvolvido par
 ---
 *Projeto desenvolvido por Marcos Silva durante a jornada DevClub.*
 
-<p align="center">
-  <img src="./assets/Banner-projeto-pele.png.png" width="100%">
-</p>
+## 📱 Interface Responsiva
 
-<p align="center">
-  <img src="./assets/Banner-projeto.png.png" width="100%">
-</p>
+Abaixo, você pode conferir como o **Pelé Burguer** se adapta perfeitamente em diferentes dispositivos, garantindo a melhor experiência para o cliente:
 
-<p align="center">
-  <img src="./assets/Resultado-Ipad-pele.png.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/Resultado-iPhone-14-Plus.png.png" width="100%">
-</p>
+<div align="center">
+  <img src="./assets/site-pele-Macbook-Air.png" width="600px" alt="Versão Desktop">
+  <br>
+  <img src="./assets/site-pele-iPad-PRO.png" width="400px" alt="Versão Tablet">
+  <img src="./assets/site-pele-iphone14.png" width="200px" alt="Versão Mobile">
+</div>
