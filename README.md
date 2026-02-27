@@ -2,6 +2,10 @@
 
 Sistema de cardápio digital e gestão de pedidos via WhatsApp, desenvolvido para oferecer uma experiência rápida e intuitiva ao cliente.
 
+> 🔗 **Acesse o projeto online:** [Clique aqui para abrir o site](https://marcos-devclub2024.github.io/Pele-Burguer-delivery/)
+
+---ADD
+
 ## 🚀 Funcionalidades
 
 * **🛒 Cardápio Interativo**: Adição de itens com ajuste de quantidade (+ / -).
