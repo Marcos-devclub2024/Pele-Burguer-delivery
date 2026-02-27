@@ -27,7 +27,7 @@ Sistema de cardápio digital e gestão de pedidos via WhatsApp, desenvolvido par
 
 ## 👨‍💻 Sobre o Projeto
 
-*Desenvolvido por **Marcos Vitalicia** durante a jornada no **DevClub**.*
+*Desenvolvido por **Marcos M Silva** durante a jornada no **DevClub**.*
 
 ---
 
